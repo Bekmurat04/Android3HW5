@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/films_item"
+        android:icon="@drawable/ic_list"
+        android:title="@string/films"/>
+    <item
+        android:id="@+id/save_item"
+        android:icon="@drawable/ic_saved"
+        android:title="@string/save"/>
+
+</menu>

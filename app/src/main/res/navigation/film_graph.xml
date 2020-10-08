@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/film_graph"
+    app:startDestination="@id/films_item">
+
+    <fragment
+        android:id="@+id/filmFragment"
+        android:name="kg.geektech.courses.android3.lesson1sept.ui.filmF.FilmFragment"
+        android:label="fragment_film"
+        tools:layout="@layout/fragment_film" >
+        <action
+            android:id="@+id/action_filmFragment_to_speciesFragment"
+            app:destination="@id/speciesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/speciesFragment"
+        android:name="kg.geektech.courses.android3.lesson1sept.ui.species.SpeciesFragment"
+        android:label="fragment_species"
+        tools:layout="@layout/fragment_species" />
+    <fragment
+        android:id="@+id/films_item"
+        android:name="kg.geektech.courses.android3.lesson1sept.ui.list.ListFragment"
+        android:label="fragment_list"
+        tools:layout="@layout/fragment_list" >
+        <action
+            android:id="@+id/action_listFragment_to_filmFragment"
+            app:destination="@id/filmFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/save_item"
+        android:name="kg.geektech.courses.android3.lesson1sept.ui.saved.SavedFragment"
+        android:label="fragment_saved"
+        tools:layout="@layout/fragment_saved" >
+        <action
+            android:id="@+id/action_save_item_to_filmFragment"
+            app:destination="@id/filmFragment" />
+    </fragment>
+</navigation>
